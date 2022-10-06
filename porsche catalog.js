@@ -39,5 +39,5 @@ const porsche = {
 
 const catalog = document.getElementById("main")
 for (car of Object.keys(porsche)) {
-	catalog.insertAdjacentHTML("beforeBegin", '<div class="element"><img class="kartinka" src="img/' + porsche[car]['img'] + '"><h2 class="zagolovok">' + car + '</h2><span class="cena">Price: '  + porsche[car]['price'] +  '₽</span><span class="probeg">Mileage: '  + porsche[car]['mileage'] +  'км</span></div>')
+	catalog.insertAdjacentHTML("beforeBegin", '<div class="element"><img class="kartinka" src="' + porsche[car]['img'] + '"><h2 class="zagolovok">' + car + '</h2><span class="cena">Price: '  + porsche[car]['price'] +  '₽</span><span class="probeg">Mileage: '  + porsche[car]['mileage'] +  'км</span></div>')
 }
