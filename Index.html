@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>St.Porsche</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="loader-screen">
+	<a id="screen-logo" href="index.html" class="logo">
+		<img width="70px" class="logo-img" src="https://pngimg.com/uploads/porsche/small/porsche_PNG10626.png">
+		<div class="logo-text">
+			<span>St.Porsche</span>
+			<span>официальный диллер</span>
+		</div>
+	</a>
+</div>
+<script type="text/javascript">
+	const slogo = document.querySelector('#screen-logo')
+	const screen = document.querySelector('.loader-screen')
+
+	slogo.style.left = (window.innerWidth - slogo.offsetWidth) / 2 + 'px'
+	slogo.style.top = (window.innerHeight - slogo.offsetHeight) / 2 + 'px'
+	setTimeout(() => { 
+		screen.style.background = 'rgba(0, 0, 0, 0)'
+		slogo.style.left = '0'
+		slogo.style.top = '5px'
+		setTimeout(() => { 
+			screen.style.display = 'none'
+		}, 1000);
+	}, 5000);
+</script>
+<header>
+	<nav class="nav-main nice-blur">
+		<a id="screen-logo" href="index.html" class="logo">
+			<img width="70px" class="logo-img" src="https://pngimg.com/uploads/porsche/small/porsche_PNG10626.png">
+			<div class="logo-text">
+				<span>St.Porsche</span>
+				<span>официальный диллер</span>
+			</div>
+		</a>
+
+		<ul style="margin-left: 300px;" class="nav-list">
+			<a href="Catalogue.html"><li class="nav-list-item">Каталог</li></a>
+			<a href="#"><li class="nav-list-item">Отзывы</li></a>
+			<a href="#"><li class="nav-list-item">О нас</li></a>
+		</ul>
+	</nav>
+	<img class="header-img" src="https://files.porsche.com/filestore/image/multimedia/none/971-g2-2nd-4s-e-hy-modelimage-sideshot/model/ce118f59-d320-11ea-80cc-005056bbdc38/porsche-model.png">
+	<div class="main-form nice-blur">
+		<form>
+			<h2 class="form-title">Связаться с нами</h2>
+			<label class="form-label">Как вас зовут?</label>
+			<input class="form-input" type="text" name="name" placeholder="Иван">
+			<label class="form-label">Ваш номер телефона</label>
+			<input class="form-input" type="tel" name="tel" placeholder="+7 (xxx) xxx-xx-xx">
+			<label class="form-label">Ваш email</label>
+			<input class="form-input" type="email" name="email" placeholder="address@email.com">
+			<span class="form-span">Оставьте нам свои контакты, чтобы мы смогли связаться с вами и помочь с выбором</span>
+			<input class="form-submit" type="submit" name="submit" value="Заказать звонок">
+		</form>
+	</div>
+</header>
+<main>
+	<div id="screen2">
+		<div class="wrapper">
+			<img class="img-screen" src="https://poster.nicefon.ru/2016_09/23/1080x610/15701586c6c6c1f17100.jpg">
+			<div class="content-screen">
+				<h2 class="catalogue-screen">Каталог</h2>
+				<p class="paragraph-screen">Перейдите в наш каталог, чтобы ознакомиться с ассортиментом наших автомобилей</p>
+				<a class="blue-button" href="Catalogue.html">Перейти</a>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+</html>

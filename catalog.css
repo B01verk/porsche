@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+.catalog {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.kartinka {
+	width: 100%;
+	object-fit: cover;
+	height: 300px;
+}
+.element {
+	background-color: #ccc;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	transition: 1s;
+}
+.element:hover {
+	background-color: #000;
+	color: #fff;
+}
